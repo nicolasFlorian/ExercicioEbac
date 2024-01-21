@@ -10,25 +10,27 @@
     </head>
 
 
-    <body onload="init()">
+    <body">
         <main>
             <section class="card">
-                <h1 class="title">Guess the Number</h1>
-                <p class="subtitle">Escolha uma número entre <span class="subtitleDecoration">1 - 100</span></p>
-                <p class="textStyle">Sua escolha: <span id="tips"></span><span id="rightChoice"></span><span id="lose"></span></p>
-                <input id="answer" type="number" placeholder="Escolha um número" min="1" max="100" onchange="compareNumbers()">
-                <div class="contagem">
-                    <p class="contagemTitle" style="margin-bottom: 20px;">Número de tentativas: <span id="contagemRight1">0</span></p>
-                    <p class="contagemTitle">Número escolhido: <span id="contagemRight2" style="margin-left: 73.5px;">0</span></p>
-                </div>
-                <button class="btn" onclick="newGame()">Novo Jogo</button>
+                <h1 class="title">Adicione um Número</h1>
+                <p class="subtitle">Escolha uma número para <span class="subtitleDecoration">A e B</span></p>
+                <form>
+                    <div class="inputs">
+                        <p class="textStyle">Campo A</p>
+                        <input id="answer" type="number" placeholder="Escolha um número">
+                    </div>
+                    <div class="inputs">
+                        <p class="textStyle">Campo B</p>
+                        <input id="answer" type="number" placeholder="Escolha um número">
+                    </div>
+                    <button class="btn">Submeter</button>
+                </form>
             </section>
             <div id="credit">
             <h2>By Nicolas Floriano</h2>
             </div>
         </main>
-
-        <script src="index.js"></script>
     </body>
 
 </html>

@@ -18,21 +18,22 @@
 main {
     background-color: #11151e;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /**** LAYOUT CARD ****/
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #4f5765;
-    position: absolute;
     padding: 20px;
-    padding-top: 30px;
-    height: 450px;
-    width: 320px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    height: 430px;
+    width: 370px;
     border-radius: 25px;
     background-color: #252a34;
     color: white;
@@ -41,9 +42,15 @@ main {
 
 /**** STYLE CARD ****/
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
 .title {
     font-weight: 600;
-    margin-bottom: 5px;
     font-size: 28px;
 }
 
@@ -55,15 +62,14 @@ main {
 
 .textStyle {
     font-size: 14px;
-    margin: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 #answer {
-    padding: 11px 12px;
+    padding: 12px 12px;
     border-radius: 5px;
-    width: 95%;
-    margin-bottom: 50px;
+    width: 100%;
+    margin-bottom: 0px;
     background-color: #f6f9fd;
 }
 
@@ -81,30 +87,15 @@ main {
     color: rgb(158, 158, 158);
 }
 
-.contagemTitle {
-    font-size: 14px;
-    margin: 10px;
-    text-align: left;
-}
-
-#contagemRight1 {
-    margin-left: 50px;
-    font-weight: 600;
-}
-
-#contagemRight2 {
-    font-weight: 600;
-}
-
 .btn {
     padding: 12px;
-    width: 95%;
     text-transform: uppercase;
     font-weight: 600;
+    border: 1px solid #4f5765;
     border-radius: 7px;
-    margin-top: 30px;
     background-color: #f6f9fd;
     letter-spacing: 1px;
+    margin-top: 15px;
 }
 
 .btn:hover {
@@ -136,21 +127,6 @@ main {
     transition-duration: 0.3s;
     cursor: pointer;
 }
-
-#rightChoice {
-    color: #7ee486;
-    font-weight: 600;
-}
-
-#tips {
-    color: #fc6a62;
-}
-
-#lose {
-    color: #fc6a62;
-    font-weight: 600;
-}
-
 
 #credit h2 {
     color: white;
