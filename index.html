@@ -5,27 +5,30 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Guess Game</title>
+        <title>Exercico JS Ebac</title>
         <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
     </head>
-
 
     <body">
         <main>
             <section class="card">
                 <h1 class="title">Adicione um Número</h1>
-                <p class="subtitle">Escolha uma número para <span class="subtitleDecoration">A e B</span></p>
-                <form>
+                <p class="subtitle">Escolha um número para <span class="subtitleDecoration">A e B</span></p>
+                <form id="form">
                     <div class="inputs">
-                        <p class="textStyle">Campo A</p>
-                        <input id="answer" type="number" placeholder="Escolha um número">
+                        <p class="textStyle">Campo A<span class="subtitleDecoration subtitleDecorationError">O número de A é maior que B!</span></p>
+                        <input class="answer" id="answer1" type="number" placeholder="Escolha um número">
                     </div>
                     <div class="inputs">
                         <p class="textStyle">Campo B</p>
-                        <input id="answer" type="number" placeholder="Escolha um número">
+                        <input class="answer" id="answer2" type="number" placeholder="Escolha um número">
                     </div>
-                    <button class="btn">Submeter</button>
+                    <button class="btn" type="submit">Submeter</button>
                 </form>
+            </section>
+            <section class="card successCard">
+                <p><span>Parabéns</span> seus números foram submetidos!</p>
             </section>
             <div id="credit">
             <h2>By Nicolas Floriano</h2>
