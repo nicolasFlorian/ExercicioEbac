@@ -1,0 +1,165 @@
+/**** CONFIGURAÇÕES GERAIS ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/**** BACKGROUDN STYLE ****/
+
+main {
+    background-color: #11151e;
+    height: 100vh;
+}
+
+/**** LAYOUT CARD ****/
+
+.card {
+    border: 1px solid #4f5765;
+    position: absolute;
+    padding: 20px;
+    padding-top: 30px;
+    height: 450px;
+    width: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 25px;
+    background-color: #252a34;
+    color: white;
+    box-shadow: 0px 13px 19px 1px rgba(0, 0, 0, 0.08);
+}
+
+/**** STYLE CARD ****/
+
+.title {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.textStyle {
+    font-size: 14px;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+#answer {
+    padding: 11px 12px;
+    border-radius: 5px;
+    width: 95%;
+    margin-bottom: 50px;
+    background-color: #f6f9fd;
+}
+
+#answer::-webkit-inner-spin-button, #answer::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#answer::-moz-inner-spin-button, #answer::-moz-outer-spin-button {
+  -moz-appearance: none;
+  margin: 0;
+}
+
+#answer::placeholder {
+    color: rgb(158, 158, 158);
+}
+
+.contagemTitle {
+    font-size: 14px;
+    margin: 10px;
+    text-align: left;
+}
+
+#contagemRight1 {
+    margin-left: 50px;
+    font-weight: 600;
+}
+
+#contagemRight2 {
+    font-weight: 600;
+}
+
+.btn {
+    padding: 12px;
+    width: 95%;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 7px;
+    margin-top: 30px;
+    background-color: #f6f9fd;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    color: #767eef;
+    background-color: #0a0f1a;
+    border: 1px solid #4f5765;
+    transition: ease;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.subtitleDecoration {
+    border-radius: 50px;
+    border: 1px solid #eb792c;
+    padding: 2px 7px;
+    margin-left: 5px;
+    color: #eb792c;
+    font-weight: 600;
+}
+
+.subtitleDecoration:hover {
+    border-radius: 50px;
+    border: 1px solid #7880f0;
+    padding: 2px 7px;
+    margin-left: 5px;
+    color: #7880f0;
+    font-weight: 600;
+    transition: ease;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#rightChoice {
+    color: #7ee486;
+    font-weight: 600;
+}
+
+#tips {
+    color: #fc6a62;
+}
+
+#lose {
+    color: #fc6a62;
+    font-weight: 600;
+}
+
+
+#credit h2 {
+    color: white;
+    font-size: 12px;
+}
+
+#credit {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

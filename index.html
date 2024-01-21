@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guess Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body onload="init()">
+        <main>
+            <section class="card">
+                <h1 class="title">Guess the Number</h1>
+                <p class="subtitle">Escolha uma número entre <span class="subtitleDecoration">1 - 100</span></p>
+                <p class="textStyle">Sua escolha: <span id="tips"></span><span id="rightChoice"></span><span id="lose"></span></p>
+                <input id="answer" type="number" placeholder="Escolha um número" min="1" max="100" onchange="compareNumbers()">
+                <div class="contagem">
+                    <p class="contagemTitle" style="margin-bottom: 20px;">Número de tentativas: <span id="contagemRight1">0</span></p>
+                    <p class="contagemTitle">Número escolhido: <span id="contagemRight2" style="margin-left: 73.5px;">0</span></p>
+                </div>
+                <button class="btn" onclick="newGame()">Novo Jogo</button>
+            </section>
+            <div id="credit">
+            <h2>By Nicolas Floriano</h2>
+            </div>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+
+</html>
 
