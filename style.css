@@ -12,12 +12,11 @@ svg {
     fill: black;
 }
 
-#sadEmoticon{
-    display: none;
+.sadEmoticon{
     fill: rgb(41, 46, 155);
 }
 
-#happyEmoticon{
+.happyEmoticon{
     fill: #1b9223;
 }
 
@@ -30,7 +29,6 @@ body{
 }
 
 .container{
-    border: 1px solid red;
     width: 60%;
     height: 40%;
 }
